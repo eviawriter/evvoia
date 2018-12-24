@@ -1,0 +1,100 @@
+html,body {
+    width:100%;
+    height:100%;
+    margin:0;
+   background-color:rgba(51, 153, 153, 0.06);
+}
+
+/* grid-layout */
+.grid-container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 75px 300px auto;
+    grid-template-rows: auto 60px;
+    grid-gap: 0px 0px;
+    grid-template-areas: "appi appchap appcontent" "appfill appadd appstat";
+  }
+  
+/* app index (left navigation bar) */
+  .appi { grid-area: appi; 
+    background-color:rgba(51, 153, 153, 0.5); 
+    border-right: 1px solid rgba(27, 50, 126, 0.15);      
+}
+
+/* Show the chapters & subchapters next to navigation bar */
+  .appchap { 
+    grid-area: appchap;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    background-color: white;
+    border-right: 1px solid rgba(27, 50, 126, 0.15);
+}
+
+/* shows statistics of the text & revisions */
+  .appstat { grid-area: appstat; 
+}
+
+/* add chapters, subchapters or other stuff to appchap */
+  .appadd { grid-area: appadd; 
+    background-color: white;
+    border-right: 1px solid rgba(27, 50, 126, 0.15);
+}
+
+/* just an empty grid, below appi */
+  .appfill { grid-area: appfill; 
+   background-color:rgba(51, 153, 153, 0.5);   
+   border-right: 1px solid rgba(27, 50, 126, 0.15);    
+}
+
+/* grid-layout for main content */
+  .appcontent {
+    display: grid;
+    grid-area: appcontent;
+    grid-template-columns: 1;
+    grid-template-rows: 90px auto;
+    grid-gap: 0px 0px;
+    grid-template-areas: "appnav" "appwrite";
+  }
+  
+/* context-sensitive navigation bar on top */
+  .appnav { 
+    grid-area: appnav; 
+   
+    }
+  
+  .appnav1 {
+    grid-area: appnav;
+    height: 50px;
+  }
+
+  .appnav2 {
+    grid-area: appnav;
+    height: 40px;
+  }
+
+/* here will the writing be done */
+  .appwrite { 
+    grid-area: appwrite;
+}
+
+/* set global headers */
+h1 {
+  font-family:'Ubuntu';
+  font-size: 1.6em;
+  text-overflow: ellipsis;
+}
+
+h2 {
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 14px;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 30px;
+  text-align: center;
+  margin: 15px 15px;
+}

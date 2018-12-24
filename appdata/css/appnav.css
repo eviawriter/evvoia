@@ -1,0 +1,46 @@
+#appnavsub {
+    display: block;
+    overflow: hidden;
+    height: 50px;
+    margin-left: 40px;
+    padding: 20px;
+    font-size: 20px;
+    font-family:'Ubuntu';
+    font-weight: bold;
+    color: #414040;
+}
+
+#appnavmenu {
+    overflow: hidden;
+    margin-left: 40px;
+    margin-right: 40px;
+    bottom: 2px;
+    border-bottom: 1px solid #999999;
+}
+
+#appnavmenu a { 
+  float: left;
+  color: #414040;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-family:'Ubuntu';
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#appnavmenu a:hover {
+       color: #339999;
+        font-weight: bold;
+       padding-bottom: 9px;
+       border-bottom: 3px solid #339999;
+      }
+
+#appnavmenu input[type=text] {
+    float: right;
+    padding: 6px;
+    border: 1px solid #999999;
+    margin-top: 1px;
+    margin-right: 1px;
+    font-size: 14px;
+}

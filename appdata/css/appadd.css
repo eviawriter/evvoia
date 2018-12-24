@@ -1,0 +1,75 @@
+/* styling appadd */
+.appaddwrap {
+    grid-area: appaddwrap; 
+        background-color:rgba(51, 153, 153, 0.5); 
+        border-right: 1px solid rgba(27, 50, 126, 0.15); 
+    }
+    
+    .appaddadd a {
+      display: block;
+      float: right;
+      margin-top: 10px;
+      margin-right: 25px;
+      width: 25px;
+      height: 25px;
+      transition: all 0.3s ease;
+      background-image: url('../css/images/menu-items/plus.png');
+      background-repeat: no-repeat;
+      background-position: 50% 25%;
+      background-size: 25px;
+    }
+    
+    .appaddadd a:hover {
+      color: black;
+      background: url('../css/images/menu-items/plus-g.png');
+      background-repeat: no-repeat;
+      background-position: 50% 25%;
+      background-size: 25px;
+      background-color: #FFF;
+    }
+    
+    .appaddremove a {
+      display: block;
+      float: right;
+      margin-top: 10px;
+      margin-right: 10px;
+      width: 25px;
+      height: 25px;
+      transition: all 0.3s ease;
+      background-image: url('../css/images/menu-items/min.png');
+      background-repeat: no-repeat;
+      background-position: 50% 25%;
+      background-size: 25px;
+    }
+    
+    .appaddremove a:hover {
+      color: black;
+      background: url('../css/images/menu-items/min-g.png');
+      background-repeat: no-repeat;
+      background-position: 50% 25%;
+      background-size: 25px;
+      background-color: #FFF;
+    }
+    
+    .appaddtrash a {
+      display: block;
+      float: left;
+      margin-left: 25px;
+      margin-top: 10px;
+      width: 25px;
+      height: 25px;
+      transition: all 0.3s ease;
+      background-image: url('../css/images/menu-items/trash.png');
+      background-repeat: no-repeat;
+      background-position: 50% 25%;
+      background-size: 25px;
+    }
+    
+    .appaddtrash a:hover {
+      color: black;
+      background: url('../css/images/menu-items/trash-g.png');
+      background-repeat: no-repeat;
+      background-position: 50% 25%;
+      background-size: 25px;
+      background-color: #FFF;
+    }

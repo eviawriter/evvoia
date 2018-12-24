@@ -1,0 +1,58 @@
+/* styling appchap */
+
+/* first style the projectname-box */
+#projectname { 
+    display: block;
+    float: left;
+    width: 300px;
+    height: 100px;
+  }
+
+/* Then style the actual visible title */
+  #projecttitle {   
+    text-indent: 25px;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    color: #414040;
+    white-space: nowrap;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+/* Needs a dashboard button */ 
+
+
+/* after that's done, style the file-tree */
+  #database { 
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 300px;
+    height: auto;
+  }
+  
+  /* Style the chapter titles */
+  #chaptertitle { 
+    display: block;
+    font-variant-caps: all-small-caps;
+    width: 250px;
+    height: 30px;
+    text-indent: 25px;
+    text-align: justify; 
+    font-family: 'Ubuntu';
+    color: #339999;
+    font-weight: bold;
+    font-size: 20px; 
+  }
+  
+#subchaptertitle {
+  display: block;
+  width: 250px;
+  height: 18px;
+  text-indent: 35px;
+  text-align: justify; 
+  font-family: 'Ubuntu';
+  color: #414040;
+  font-size: 16px; 
+}

@@ -1,0 +1,107 @@
+/* Quill section (toolbar, editor) */
+
+/* the toolbar we use */
+#toolbar { 
+    display: flex;
+    align-items: center;
+    min-width: 500px;
+    max-width: auto;
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: white;
+}
+
+/* the editor. */
+#editor {
+    color: #000;
+    min-width: 500px;
+    max-width: auto;
+    min-height: 525px;
+    max-height: 525px;
+    margin-top: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: white;  
+    overflow-y: auto;
+    padding: 30px;
+} 
+
+#editor .ql-editor {
+    font-size: 18px;
+    font-family: "Ubuntu";
+    overflow-y: visible; 
+}
+  
+/* Set dropdown font-families toolbar */
+#toolbar .ql-font span[data-label="Ubuntu"]::before {
+    font-family: "Ubuntu";
+}
+
+#toolbar .ql-font span[data-label="Georgia, serif"]::before {
+    font-family: "Georgia, serif";
+}
+
+#toolbar .ql-font span[data-label="Sans-serif"]::before {
+    font-family: "sans-serif";
+}
+
+#toolbar .ql-font span[data-label="monospace"]::before {
+    font-family: "monospace";
+}
+  
+  /* Set content font-families toolbar */
+.ql-font-ubuntu { 
+    font-family: "Ubuntu";
+}
+
+.ql-font-georgia-serif {
+    font-family: "Georgia, serif";
+}
+  
+.ql-font-sans-serif {
+    font-family: "sans-serif";
+}
+
+.ql-font-sans-roboto {
+    font-family: "monospace";
+}
+
+/* doesn't work, maybe useful for something? 
+.headers {
+    display: block;
+    background: #353535;
+    width: 100%;
+    height: 20px;
+    padding: 5px 0px;
+    font-size: 12px;
+    text-transform:uppercase;   
+}
+*/
+
+/* placeholder text adjustment, overwrites quills css */
+.ql-editor.ql-blank::before {
+    left: 45px;
+    right: 45px;
+    font-family: "ubuntu";
+  }
+
+/* make scrollbar quill beautiful */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
